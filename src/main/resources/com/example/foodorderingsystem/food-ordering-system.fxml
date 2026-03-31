@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="433.0" prefWidth="431.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.foodorderingsystem.foodOrderingSystemController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="324.0" prefWidth="274.0">
+      <children>
+      
+          <Label fx:id="welcomeText" layoutX="249.0" layoutY="55.0" text="Discount">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label fx:id="welcomeText1" layoutX="74.0" layoutY="55.0" text="Foods">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <CheckBox layoutX="26.0" layoutY="92.0" mnemonicParsing="false" text="Pizza               Php 100 " />
+         <CheckBox layoutX="26.0" layoutY="116.0" mnemonicParsing="false" text="Burger             Php 80" />
+         <CheckBox layoutX="26.0" layoutY="142.0" mnemonicParsing="false" text="Fries                Php 65" />
+         <CheckBox layoutX="27.0" layoutY="169.0" mnemonicParsing="false" text="Softdrinks       Php 55" />
+         <CheckBox layoutX="27.0" layoutY="196.0" mnemonicParsing="false" text="Tea                 Php 50" />
+         <CheckBox layoutX="27.0" layoutY="223.0" mnemonicParsing="false" text="Sundae           Php 40" />
+         <RadioButton layoutX="249.0" layoutY="92.0" mnemonicParsing="false" text="None" />
+         <RadioButton layoutX="249.0" layoutY="116.0" mnemonicParsing="false" text="5% Off" />
+         <RadioButton layoutX="250.0" layoutY="142.0" mnemonicParsing="false" text="10% Off" />
+         <RadioButton layoutX="250.0" layoutY="169.0" mnemonicParsing="false" text="15% Off" />
+         <Button layoutX="148.0" layoutY="272.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" text="Order">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Button>
+      </children>
+   </AnchorPane>
+</VBox>
