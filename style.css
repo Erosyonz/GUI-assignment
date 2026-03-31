@@ -1,0 +1,9 @@
+#increaseButton{
+    -fx-background-color: green;
+    -fx-text-fill: white
+}
+
+#decreaseButton{
+    -fx-background-color: red;
+    -fx-text-fill: white
+}
