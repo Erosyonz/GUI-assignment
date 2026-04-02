@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="433.0" prefWidth="431.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.foodorderingsystem.foodOrderingSystemController">
+<VBox alignment="CENTER" prefHeight="433.0" prefWidth="431.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foodorderingsystem.foodOrderingSystemController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -26,17 +26,17 @@
                <Font size="15.0" />
             </font>
          </Label>
-         <CheckBox layoutX="26.0" layoutY="92.0" mnemonicParsing="false" text="Pizza               Php 100 " />
-         <CheckBox layoutX="26.0" layoutY="116.0" mnemonicParsing="false" text="Burger             Php 80" />
-         <CheckBox layoutX="26.0" layoutY="142.0" mnemonicParsing="false" text="Fries                Php 65" />
-         <CheckBox layoutX="27.0" layoutY="169.0" mnemonicParsing="false" text="Softdrinks       Php 55" />
-         <CheckBox layoutX="27.0" layoutY="196.0" mnemonicParsing="false" text="Tea                 Php 50" />
-         <CheckBox layoutX="27.0" layoutY="223.0" mnemonicParsing="false" text="Sundae           Php 40" />
-         <RadioButton layoutX="249.0" layoutY="92.0" mnemonicParsing="false" text="None" />
-         <RadioButton layoutX="249.0" layoutY="116.0" mnemonicParsing="false" text="5% Off" />
-         <RadioButton layoutX="250.0" layoutY="142.0" mnemonicParsing="false" text="10% Off" />
-         <RadioButton layoutX="250.0" layoutY="169.0" mnemonicParsing="false" text="15% Off" />
-         <Button layoutX="148.0" layoutY="272.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" text="Order">
+         <CheckBox fx:id="cPizza" layoutX="26.0" layoutY="92.0" mnemonicParsing="false" onAction="#onMenuClick" text="Pizza               Php 100 " />
+         <CheckBox fx:id="cBurger" layoutX="26.0" layoutY="116.0" mnemonicParsing="false" onAction="#onMenuClick" text="Burger             Php 80" />
+         <CheckBox fx:id="cFries" layoutX="26.0" layoutY="142.0" mnemonicParsing="false" onAction="#onMenuClick" text="Fries                Php 65" />
+         <CheckBox fx:id="cSoftDrinks" layoutX="27.0" layoutY="169.0" mnemonicParsing="false" onAction="#onMenuClick" text="Softdrinks       Php 55" />
+         <CheckBox fx:id="cTea" layoutX="27.0" layoutY="196.0" mnemonicParsing="false" onAction="#onMenuClick" text="Tea                 Php 50" />
+         <CheckBox fx:id="cSundae" layoutX="27.0" layoutY="223.0" mnemonicParsing="false" onAction="#onMenuClick" text="Sundae           Php 40" />
+         <RadioButton fx:id="rbNone" layoutX="249.0" layoutY="92.0" mnemonicParsing="false" onAction="#onDiscountClick" text="None" />
+         <RadioButton fx:id="rb5" layoutX="249.0" layoutY="116.0" mnemonicParsing="false" onAction="#onDiscountClick" text="5% Off" />
+         <RadioButton fx:id="rb10" layoutX="250.0" layoutY="142.0" mnemonicParsing="false" onAction="#onDiscountClick" text="10% Off" />
+         <RadioButton fx:id="rb15" layoutX="250.0" layoutY="169.0" mnemonicParsing="false" onAction="#onDiscountClick" text="15% Off" />
+         <Button fx:id="btnOrder" layoutX="148.0" layoutY="272.0" mnemonicParsing="false" onAction="#onOrderClick" prefHeight="38.0" prefWidth="95.0" text="Order">
             <font>
                <Font size="16.0" />
             </font>
