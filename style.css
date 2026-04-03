@@ -1,9 +1,56 @@
-#increaseButton{
-    -fx-background-color: green;
-    -fx-text-fill: white
+.root {
+    -fx-background-color: #f4f4f4;
+    -fx-background-image: url("numberBG.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
 }
 
-#decreaseButton{
-    -fx-background-color: red;
-    -fx-text-fill: white
+#countLabel {
+
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-weight: bold;
+    -fx-font-size: 80px;
+    -fx-fill: #333333;
+}
+
+
+.button {
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 10 15 10 15;
+
+
+    -fx-background-insets: 4 0 0 4, 0 4 4 0, 2 6 6 2, 5 6 6 6;
+}
+
+
+#increaseButton {
+
+    -fx-background-color: #888888, #000000, #45f04b, #14DE1B;
+}
+
+#increaseButton:pressed {
+
+    -fx-background-color: #888888, #000000, #75ff7a, #45f04b;
+    -fx-translate-y: 2px;
+    -fx-translate-x: 2px;
+}
+
+
+#decreaseButton {
+
+    -fx-background-color: #888888, #000000, #e34d4d, #D91313;
+}
+
+#decreaseButton:pressed {
+
+    -fx-background-color: #888888, #000000, #f28a8a, #e34d4d;
+    -fx-translate-y: 2px;
+    -fx-translate-x: 2px;
 }

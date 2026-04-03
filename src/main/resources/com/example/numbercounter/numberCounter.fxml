@@ -15,8 +15,8 @@
       <AnchorPane prefHeight="248.0" prefWidth="265.0">
          <children>
             <Button id="decreaseButton" fx:id="decreaseButton" layoutX="37.0" layoutY="117.0" mnemonicParsing="false" onAction="#onDecreaseButtonClick" text="Decrease" />
-            <Button id="increaseButton" fx:id="increaseButton" layoutX="142.0" layoutY="117.0" mnemonicParsing="false" onAction="#onIncreaseButtonClick" text="Increase" />
-            <Text fx:id="countLabel" layoutX="113.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+            <Button id="increaseButton" fx:id="increaseButton" layoutX="159.0" layoutY="117.0" mnemonicParsing="false" onAction="#onIncreaseButtonClick" text="Increase" />
+            <Text fx:id="countLabel" layoutX="124.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
                <font>
                   <Font size="36.0" />
                </font>
