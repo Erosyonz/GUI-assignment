@@ -1,0 +1,95 @@
+
+.root {
+    -fx-background-image: url("last.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-family: "DM Sans";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 1);
+}
+
+.check-box {
+    -fx-text-fill: #1C1410;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 10 8 10;
+    -fx-cursor: hand;
+    -fx-background-color: rgba(255, 252, 249, 0.9); /* Slight transparency */
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(92, 74, 58, 0.12);
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+}
+
+.check-box .box {
+    -fx-background-color: #FBF7F2;
+    -fx-border-color: rgba(92, 74, 58, 0.22);
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.check-box:selected {
+    -fx-background-color: #F0D4C6;
+    -fx-border-color: #E8A88A;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #C85A2E;
+    -fx-border-color: #C85A2E;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+
+.radio-button {
+    -fx-text-fill: #1C1410;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 7 10 7 10;
+    -fx-cursor: hand;
+    -fx-background-color: rgba(255, 252, 249, 0.9);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(92, 74, 58, 0.12);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.radio-button .radio {
+    -fx-background-color: #FBF7F2;
+    -fx-border-color: rgba(92, 74, 58, 0.22);
+    -fx-border-radius: 50;
+}
+
+.radio-button:selected {
+    -fx-background-color: #F5E6C8;
+    -fx-border-color: #D4942A;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #D4942A;
+    -fx-border-color: #D4942A;
+}
+
+
+
+#btnOrder {
+    -fx-background-color: #C85A2E;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 12 25 12 25;
+    -fx-cursor: hand;
+}
+
+#btnOrder:hover {
+    -fx-background-color: #B54D24;
+}
