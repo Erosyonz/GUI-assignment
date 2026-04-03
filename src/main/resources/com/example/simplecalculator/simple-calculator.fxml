@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="333.0" prefWidth="597.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplecalculator.simpleCalculatorController">
+<VBox alignment="CENTER" prefHeight="333.0" prefWidth="597.0" spacing="20.0" stylesheets="@../../../../../Style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simplecalculator.simpleCalculatorController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -35,9 +35,9 @@
             <TextField fx:id="tfNumber1" layoutX="55.0" layoutY="91.0" prefHeight="25.0" prefWidth="109.0" />
             <ComboBox fx:id="cbOperations" layoutX="189.0" layoutY="91.0" prefHeight="25.0" prefWidth="33.0" />
             <Label fx:id="lblResult" layoutX="413.0" layoutY="87.0" prefHeight="25.0" prefWidth="94.0" />
-            <Button fx:id="btnCompute" layoutX="239.0" layoutY="192.0" mnemonicParsing="false" onAction="#onComputeClick" text="Compute Result" />
+            <Button fx:id="btnCompute" layoutX="239.0" layoutY="167.0" mnemonicParsing="false" onAction="#onComputeClick" text="Compute Result" />
             <TextField fx:id="tfNumber2" layoutX="264.0" layoutY="91.0" prefHeight="25.0" prefWidth="109.0" />
-         <Label fx:id="errorDisplay" layoutX="55.0" layoutY="123.0" />
+         <Label fx:id="errorDisplay" layoutX="55.0" layoutY="130.0" textFill="RED" />
         </children>
     </AnchorPane>
 </VBox>

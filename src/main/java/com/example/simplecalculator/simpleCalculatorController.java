@@ -20,7 +20,7 @@ public class simpleCalculatorController {
         cbOperations.getItems().addAll("+","-","*","/");
         tfNumber1.setId("tfNumber1");
         tfNumber2.setId("tfNumber2");
-        cbOperations.setId("cbOperation");
+        cbOperations.setId("cbOperations");
         btnCompute.setId("btnCompute");
         lblResult.setId("lblResult");
         errorDisplay.setId("errorDisplay");
@@ -30,15 +30,15 @@ public class simpleCalculatorController {
     public void onComputeClick(){
         errorDisplay.setText("");
         lblResult.setText("");
-        int a = 0;
+        double a = 0;
         try{
 
             String num1 = tfNumber1.getText();
             String num2 = tfNumber2.getText();
 
-            a = Integer.parseInt(num1);
-            int b = Integer.parseInt(num2);
-            int x = 0;
+            a = Double.parseDouble(num1);
+            double b = Double.parseDouble(num2);
+            double x = 0.0;
 
             String op = cbOperations.getValue();
             if(op != null){
@@ -57,11 +57,11 @@ public class simpleCalculatorController {
                         break;
                 }
             }
-            lblResult.setText(String.format("%d", x));
+            lblResult.setText(String.format("%.2f", x));
         }catch (NumberFormatException e){
             errorDisplay.setText("Numbers only");
         }catch(ArithmeticException e){
-            errorDisplay.setText("Cannot divide " + String.format("%d", a) +"/0");
+            errorDisplay.setText("Cannot divide " + String.format("%.2f", a) +"/0");
         }
     }
 
